@@ -22,7 +22,7 @@ export const usePublishResult = (resultData) => {
     (async () => {
         try {
             if(result !== [] && !username) throw new Error("Couldn't get Result");
-            await postServerData("https://quiz-application-rudra.verce.app/api/result", resultData, data => data)
+            await postServerData("https://quiz-application-rudra.vercel.app/api/result", resultData, data => data)
         } catch (error) {
             console.log(error)
         }
