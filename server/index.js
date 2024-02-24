@@ -28,7 +28,9 @@ const port = 5000;
 
 /** routes */
 app.use('/api', router) /** apis */
-
+app.get('/',(req,res)=>{
+    res.json("Hello");
+});
 
 app.get('/', (req, res) => {
     try {
