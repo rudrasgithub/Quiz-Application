@@ -13,7 +13,11 @@ const app = express()
 
 /** app middlewares */
 app.use(morgan('tiny'));
-app.use(cors());
+app.use(cors({
+    origin:["https://quiz-application-rudra.vercel.app"],
+    methods:["GET","POST","DELETE"],
+    crendentials:true
+    ));
 app.use(express.json());
 config();
 
