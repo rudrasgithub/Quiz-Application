@@ -6,7 +6,7 @@ export default function ResultTable() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        getServerData("http://localhost:5000/api/result", (res) => {
+        getServerData("quiz-application-rudra.verce.app/api/result", (res) => {
             setData(res)
         })
     })
