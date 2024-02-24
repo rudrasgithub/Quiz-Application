@@ -14,7 +14,7 @@ const app = express()
 /** app middlewares */
 app.use(morgan('tiny'));
 app.use(cors({
-    origin:["https://quiz-application-rudra.vercel.app"],
+    origin:["https://quiz-application-d36b.vercel.app/"],
     methods:["GET","POST","DELETE"],
     crendentials:true
     ));
