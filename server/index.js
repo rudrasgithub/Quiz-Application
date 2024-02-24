@@ -15,7 +15,7 @@ const app = express()
 app.use(morgan('tiny'));
 app.use(cors({
     origin:["https://quiz-application-d36b.vercel.app"],
-    methods:["GET","POST","DELETE"],
+    methods:["GET","POST"],
     crendentials:true
     ));
 app.use(express.json());
